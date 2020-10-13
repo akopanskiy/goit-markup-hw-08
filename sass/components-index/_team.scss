@@ -1,5 +1,8 @@
 .team {
-  background-color: $background-team;
+  @media screen and (min-width: 768px) {
+    background-color: $background-team;
+  }
+
   &-item {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -7,6 +10,7 @@
     background-color: $background-body;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 30px;
   }
   &-item:last-child {
     @media screen and (max-width: 767px) {
@@ -98,8 +102,6 @@
   }
 }
 .container-team {
-  // width: 1200px;
-
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -142,12 +144,16 @@
   transition: background-color 250ms $cubic;
   &:hover,
   &:focus {
-    background-color: $accent;
+    @media screen and (min-width: 1200px) {
+      background-color: $accent;
+    }
   }
   &:hover,
   &:focus {
     .icon-social {
-      fill: $background-body;
+      @media screen and (min-width: 1200px) {
+        fill: $background-body;
+      }
     }
   }
 }

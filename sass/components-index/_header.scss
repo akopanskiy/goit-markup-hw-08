@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: 2px solid red;
+  // outline: 2px solid red;
 
   &-list {
     @media screen and (min-width: 768px) {
@@ -74,16 +74,14 @@
       padding-bottom: 32px;
       margin-bottom: 0;
     }
-
-    // &:last-child {
-    //   margin-bottom: 0;
-    // }
   }
 
   .link {
     &:hover,
     &:focus {
-      color: $accent;
+      @media screen and (min-width: 1200px) {
+        color: $accent;
+      }
     }
   }
   .link.current {
@@ -212,14 +210,18 @@
   .link-tel {
     &:hover,
     &:focus {
-      color: $accent;
+      @media screen and (min-width: 1200px) {
+        color: $accent;
+      }
     }
   }
   .item:hover,
   .item:focus {
     .icon-header-envelope,
     .icon-header-smartphone {
-      fill: $accent;
+      @media screen and (min-width: 1200px) {
+        fill: $accent;
+      }
     }
   }
 }
@@ -277,17 +279,24 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  &:hover,
+  &:focus {
+    fill: $accent;
+  }
 }
 .mobile-menu .icon-cross {
   display: none;
+  transition: fill 250ms $cubic;
 }
 
 .mobile-menu.is-open .icon-cross {
   display: block;
+  transition: fill 250ms $cubic;
 }
 
 .mobile-menu.is-open .icon-menu {
   display: none;
+  transition: fill 250ms $cubic;
 }
 
 .container-menu {
@@ -306,6 +315,7 @@
     left: 0;
     width: 100%;
     height: 393px;
+    z-index: 1000;
   }
   @media screen and (min-width: 768px) {
     display: flex;

@@ -3,8 +3,18 @@
   padding-bottom: 40px;
 
   &-button {
-    justify-content: center;
-    margin-bottom: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 }
 .container-main {

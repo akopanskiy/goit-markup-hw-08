@@ -150,7 +150,9 @@
   }
   &-icon-link:hover,
   &-icon-link:focus {
-    background-color: $accent;
+    @media screen and (min-width: 1200px) {
+      background-color: $accent;
+    }
   }
 }
 .footer-icon-social {
