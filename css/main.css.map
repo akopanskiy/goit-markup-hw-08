@@ -5,7 +5,7 @@
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
         "../sass/components-index/_header.scss",
-        "../sass/components-index/_head.scss",
+        "../sass/components-index/_hero.scss",
         "../sass/components-index/_features.scss",
         "../sass/components-index/_works.scss",
         "../sass/components-index/_team.scss",
