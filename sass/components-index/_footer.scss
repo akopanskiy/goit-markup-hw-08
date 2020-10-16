@@ -6,7 +6,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     display: block;
 
     text-align: center;
@@ -225,10 +225,12 @@
   &-form-input {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
 
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
     padding-right: 16px;
 
